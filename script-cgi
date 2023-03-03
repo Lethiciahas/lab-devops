@@ -1,0 +1,22 @@
+#!/bin/sh
+echo "Content-type: text/html"
+echo
+
+cat <<t
+<html>
+    <head>
+        <meta charset=UTF-8"
+    </head>
+<body>
+
+    <div>
+        <p>Atualizado em: $(date +'%d/%m/%Y - %H:%M:%S')
+    </div>
+    <div>
+        <h2>Listando Namespaces do Cluster</h2>
+        <pre>$(kubectl get namespaces -o custom-columns="Name:.metadata.name")</pre>
+    </div>
+
+</body>
+</html>
+t
