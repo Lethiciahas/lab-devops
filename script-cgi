@@ -11,12 +11,8 @@ cat <<t
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
-
     <div>
-        <p>Atualizado em: $(date +'%d/%m/%Y - %H:%M:%S')
-    </div>
-    <div>
-        <h2>Listando Namespaces do Cluster</h2>
+        <h2>Listando Namespaces</h2>
         <pre>$(kubectl get namespaces -o custom-columns="Name:.metadata.name")</pre>
     </div>
 
