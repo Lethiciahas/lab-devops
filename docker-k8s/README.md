@@ -1,5 +1,4 @@
-# deploy de aplicação kubernetes 
-<br>
+# deploy de aplicação kubernetes #
 
 Desafio 02 - Jack Experts
 Deploy de aplicação no Kubernetes para listar namespaces do cluster
