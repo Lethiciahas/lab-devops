@@ -1,14 +1,8 @@
-# shell-cgi
-
-Desafio 01 - Jack Experts
-Desenvolvimento de uma página cgi, para listar namespaces de um cluster kubernetes.
+# Desafio 02 - Jack Experts #
+Deploy de aplicação no Kubernetes para listar namespaces do cluster
 
 Tecnologias utilizadas:
-• Docker
-• Nginx - Fastcgi
-• Shell
-• Kubectl commands
-• Cluster Kubernetes
+K8s,
+Conceitos de Permissões a usúarios: RBAC
 
-Notas: O arquivo Cluster1.yaml está vazio, devendo adicionar o conteúdo do arquivo do cluster que for executar.
-Para rodar utilize o comando "docker run -d -p 80:80 <image>"
+
