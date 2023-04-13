@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-python
+  namespace: app-python
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-py
+  template:
+    metadata:
+      labels:
+        app: app-py
+    spec:
+      containers:
+      - name: app-py
+        image: lethiciahas/kube-python
+        ports:
+        - containerPort: 80
