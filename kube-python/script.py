@@ -12,7 +12,7 @@ def get_namespaces():
     namespaces_html = Markup('<ul>' + ''.join(f'<li>{ns}</li>' for ns in namespaces) + '</ul>')
 
    
-    return f"Listando Namespaces: {namespaces_html}"
+    return f"<meta http-equiv='refresh' content='10'>Listando Namespaces: {namespaces_html}"
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=80)
