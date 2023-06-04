@@ -18,9 +18,9 @@ def namespaces():
 @app.route('/namespaces/delete', methods=['POST'])
 def namespaces_delete():
     namespace= request.form.get('namespace')
-    status=delete_namespace(namespace)
-    return status
-##    return redirect('/namespaces')
+    delete_namespace(namespace)
+##    return status
+    return redirect('/namespaces')
 
 
 if __name__ == '__main__':
